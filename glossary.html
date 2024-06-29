@@ -217,8 +217,8 @@ This allows the editor to save any updates made in the UI.
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const HOST = process.env['HOST'] || 'localhost';
-const PORT = process.env['PORT'] || 10000;
+const HOST = process.env['HOST'] || '0.0.0.0';
+const PORT = process.env['PORT'] || 3000;
 const FILE = process.env['FILE'] || './glossary.html';
 
 const mimeTypes = {
